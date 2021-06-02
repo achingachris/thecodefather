@@ -1,0 +1,15 @@
+<div class="site-branding">
+  {{ if .Site.Data.config.header.logo_img }}
+  <p class="site-logo">
+    <a href='{{ "/" | relURL }}'><img src="{{ $.Site.Data.config.header.logo_img | relURL }}" alt="{{ $.Site.Data.config.header.logo_img_alt }}" /></a>
+  </p>
+  {{ end }}
+  {{ if eq .Params.layout "home" }}
+  <h1 class="site-title"><a href='{{ "/" | relURL }}'>{{ $.Site.Data.config.header.title }}</a></h1>
+  {{ else }}
+  <p class="site-title"><a href='{{ "/" | relURL }}'>{{ $.Site.Data.config.header.title }}</a></p>
+  {{ end }}
+  {{ if .Site.Data.config.header.tagline }}
+  <p class="site-description">{{ $.Site.Data.config.header.tagline }}</p>
+  {{ end }}
+</div><!-- .site-branding -->

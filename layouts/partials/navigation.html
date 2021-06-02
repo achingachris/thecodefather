@@ -1,0 +1,45 @@
+{{ if or .Site.Data.config.header.has_nav .Site.Data.config.header.has_social }}
+<nav id="main-navigation" class="site-navigation" aria-label="Main Navigation">
+  <div class="site-nav-wrap">
+    <div class="site-nav-inside">
+
+      {{ if $.Site.Data.config.header.has_nav }}
+      <ul class="menu">
+        {{ range $action := $.Site.Data.config.header.nav_links }}
+          {{ $pageUrl := trim $.URL "/" }}
+          {{ $actionUrl := trim $action.url "/" }}
+          <li class="menu-item{{ if eq $pageUrl $actionUrl }} current-menu-item{{ end }}">
+            <a href="{{ $action.url | relURL }}"
+              {{ if $action.new_window }} target="_blank"{{ end }}
+              {{ if or $action.new_window $action.no_follow }} rel="{{ if $action.new_window }}noopener {{ end }}{{ if $action.no_follow }}nofollow{{ end }}"{{ end }}>{{ $action.label }}</a>
+          </li>
+        {{ end }}
+      </ul>
+      {{ end }}
+
+      {{ if $.Site.Data.config.header.has_social }}
+      <div class="social-links">
+        {{ range $action := $.Site.Data.config.header.social_links }}
+        {{ if $action }}
+        <a href="{{ $action.url | relURL }}"
+          {{ if $action.new_window }} target="_blank"{{ end }}
+          {{ if or $action.new_window $action.no_follow }} rel="{{ if $action.new_window }}noopener {{ end }}{{ if $action.no_follow }}nofollow{{ end }}"{{ end }}
+          {{ if eq $action.style "icon" }}class="button-circle"{{ end }}>
+          {{ if and (eq $action.style "icon") $action.icon_class }}
+            {{ $include_dict := dict "icon" $action.icon_class }}
+            {{ partial "icon.html" $include_dict }}
+            <span class="screen-reader-text">{{ $action.label }}</span>
+          {{ else }}
+          {{ $action.label }}
+          {{ end }}
+        </a>
+        {{ end }}
+        {{ end }}
+      </div><!-- .social-links -->
+      {{ end }}
+
+    </div><!-- .site-nav-inside -->
+  </div><!-- .site-nav-wrap -->
+</nav><!-- .site-navigation -->
+<button id="menu-toggle" class="menu-toggle"><span class="screen-reader-text">Menu</span><span class="icon-menu" aria-hidden="true"></span></button>
+{{ end }}

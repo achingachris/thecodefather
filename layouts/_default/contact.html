@@ -1,0 +1,42 @@
+{{ define "content" }}
+
+  {{ $include_dict := dict "Site" .Site "page" . "image" .Params.img_path }}
+  {{ partial "header.html" $include_dict }}
+
+  <div id="content" class="site-content">
+    <main id="main" class="site-main inner">
+
+      <article class="post page post-full">
+        <header class="post-header">
+          <h1 class="post-title">{{ .Params.title }}</h1>
+        </header><!-- .post-header -->
+        {{ if .Params.subtitle }}
+        <div class="post-subtitle">
+          {{ $.Params.subtitle | safeHTML }}
+        </div><!-- .post-subtitle -->
+        {{ end }}
+        <div class="post-content">
+          {{ .Content }}
+          <form name="{{ .Params.form_id }}" id="{{ .Params.form_id }}" {{ if .Params.form_action }} action="{{ $.Params.form_action }}" {{ end }}method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+            <div class="screen-reader-text">
+              <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+            </div>
+            <input type="hidden" name="form-name" value="{{ .Params.form_id }}" />
+            {{ range $field := .Params.form_fields }}
+              {{ $include_dict = dict "field" $field }}
+              {{ partial "form_field.html" $include_dict }}
+            {{ end }}
+            <div class="form-submit">
+              <button type="submit" class="button">{{ .Params.submit_label }}</button>
+            </div>
+          </form>
+        </div><!-- .post-content -->
+      </article><!-- .post -->
+
+    </main><!-- .site-main -->
+
+    {{ partial "footer.html" $include_dict }}
+
+  </div><!-- .site-content -->
+
+{{ end }}

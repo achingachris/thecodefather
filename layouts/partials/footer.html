@@ -1,0 +1,14 @@
+<footer id="colophon" class="site-footer inner">
+  {{ if or .Site.Data.config.footer.content .Site.Data.config.footer.links }}
+  <div class="site-footer-inside">
+    {{ if $.Site.Data.config.footer.content }}
+    <span class="copyright">{{ $.Site.Data.config.footer.content | safeHTML }}</span>
+    {{ end }}
+    {{ range $link := $.Site.Data.config.footer.links }}
+      <a href="{{ $link.url | relURL }}" {{ if $link.new_window }}target="_blank" rel="noopener"
+      {{ end }}>{{ $link.label }}</a>
+    {{ end }}
+  </div><!-- .site-footer-inside -->
+  {{ end }}
+  <a id="to-top" class="to-top" href="#page">To top <span class="icon-arrow-up" aria-hidden="true"></span></a>
+</footer><!-- .site-footer -->
