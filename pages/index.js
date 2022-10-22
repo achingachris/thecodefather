@@ -1,8 +1,6 @@
-
+import Layout from '../components/layout/Layout'
 const HomePage = () => {
-  return (
-    <div>index</div>
-  )
+  return <Layout>index</Layout>
 }
 
 export default HomePage

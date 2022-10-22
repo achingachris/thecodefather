@@ -1,7 +1,8 @@
+import Layout from '../../components/layout/Layout'
 
 const ArticleList = () => {
   return (
-    <div>article list</div>
+    <Layout>article list</Layout>
   )
 }
 

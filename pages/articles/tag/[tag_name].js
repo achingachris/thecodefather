@@ -1,8 +1,8 @@
-import React from 'react'
+import Layout from '../../../components/layout/Layout'
 
 const ListTagArticles = () => {
   return (
-    <div>ListTagArticles</div>
+    <Layout>ListTagArticles</Layout>
   )
 }
 

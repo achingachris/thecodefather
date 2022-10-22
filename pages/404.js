@@ -1,7 +1,8 @@
+import Layout from "../components/layout/Layout"
 
 const NotFound = () => {
   return (
-    <div>404</div>
+    <Layout>404</Layout>
   )
 }
 
