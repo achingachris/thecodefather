@@ -18,7 +18,7 @@ const Layout = ({
         pageURL={pageURL}
       />
       <Navbar />
-      {children}
+      <main className='container'>{children}</main>
       <Footer />
     </>
   )
