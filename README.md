@@ -1,34 +1,84 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# [YOUR_PROJECT_NAME] : [![Netlify Status](https://api.netlify.com/api/v1/badges/6a769aea-36f4-45f3-a317-166ca9adcb2c/deploy-status)](https://app.netlify.com/sites/codefather/deploys)
 
-## Getting Started
+[PLACE_FOR_YOUR_IMAGE]
 
-First, run the development server:
+[PLACE_TO_ADD_LINK_FOR_DEPLOYED_VERSION]
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+[Add some introduction about your project. What is the purpose of it? What problem does it solve? What it does?]
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Example:**
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+  {YOUR_PROJECT_NAME} is a web application to check the weather in any location in world! 
+  - Enter the name of the city you want to know the weather for. 
+  - Get the weather for your current location.
+  - Get the weather forecast for up to 4 weeks!
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+# Technologies in use / Tech Stack / Built with
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+[Add the main technologies you used to build this project]
 
-## Learn More
+**Example:**
 
-To learn more about Next.js, take a look at the following resources:
+  - TypeScript
+  - React
+  - Redux
+  - TailwindCSS
+  - Node.js
+  - Express
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+[Explain how to install your project locally. Technical person would want to clone your repo, check code and run it locally]
 
-## Deploy on Vercel
+**Example:**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To install {YOUR_PROJECT_NAME} locally, please follow the steps below:
+  - Clone repo to your machine
+  - Open the root of the project and install all dependencies with `npm i` / `yarn`
+  - Project has various scripts to run:
+    - `npm start` - running local version
+    - `npm run test` - run tests
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# What I have learned
+
+[Tell more about what you have learned while building this project]
+
+**Example:**
+
+While I was building {YOUR_PROJECT_NAME} I have learned the fundamentals of React and Redux. I learned what is the difference between React Context API and Redux, and what works best for my current application. I have used Reat hooks like useEffect, useState. It was my first project using TypeScript and I have learned a lot about TypeScript type definitions and fundamentals.
+
+# What issues have I faced and how I resolved them
+
+[Tell what was hard in the process of building the project. Tell about where have you feel stuck and how did you overcome this.]
+
+**Example:**
+
+When I tried to connect to the third-party API, I was not sure how to use fetch and what is the difference between async/await, what are Promises and how to use them. After some Googling I found out the MDN documentation about async/await and tried to use it in practice - it worked! 
+
+# Source
+
+[Is this project was part of the course? Is it your own idea? Is it came from community?]
+
+**Example:**
+
+This project is done as part of the SheCodes course curriculum. 
+
+
+# ---- TEMPLATE ENDS HERE ---- 
+
+This is definitely way better than your generic Create React App README. Use it, make your projects stand out from the rest. 
+
+# Contribution
+
+Feel free to contribute in any way possible. To contribute, please do the following:
+
+- `git clone` this repo
+- Go to the root folder of this project and checkout to another branch
+- `git checkout {your-nickname}-rename-title
+- Do your stuff
+- `git add .`
+- `git commit -m "any descriptive message"`
+- `git push origin {your-nickname}-rename-title`
+- Submit a PR for review
+
+# For beginners with love
