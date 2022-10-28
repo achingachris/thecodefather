@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['randomuser.me'],
+    domains: ['randomuser.me', 'api.netlify.com'],
   },
 }
 
