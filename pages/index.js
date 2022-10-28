@@ -2,18 +2,19 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import Link from 'next/link'
+import Article from '../components/Article'
+import { sortByDate } from '../utils/sortByDate'
 
 const Home = ({ articles }) => {
-  console.log(articles)
+  // console.log(articles)
   return (
     <>
       <h2>Posts</h2>
       {articles.map((article, index) => (
-        <div key={index}>
-          <h3>{article.frontmatter.title}</h3>
-          <p>{article.frontmatter.excerpt}</p>
-        </div>
+        <Article key={index} article={article} />
       ))}
+
+      <Link href='/articles'>Articles</Link>
     </>
   )
 }
@@ -43,7 +44,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      articles,
+      articles: articles.sort(sortByDate).slice(0, 6),
     },
   }
 }
