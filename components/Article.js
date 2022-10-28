@@ -4,6 +4,7 @@ import Link from 'next/link'
 const Article = ({ article }) => {
   return (
     <div>
+      <h2>{ article.frontmatter.title}</h2>
       <Image
         src={article.frontmatter.cover_image}
         width={400}
