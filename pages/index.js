@@ -21,7 +21,7 @@ const Home = ({ articles }) => {
         </a>
       </p>
 
-      <h2>Posts</h2>
+      <h2 className='text-3xl font-bold underline'>Posts</h2>
       {articles.map((article, index) => (
         <Article key={index} article={article} />
       ))}
