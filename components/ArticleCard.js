@@ -6,7 +6,6 @@ const ArticleCard = ({ article }) => {
     <div className='col-md-4'>
       <div className='card-content'>
         <div className='card-img'>
-          {/* <img src={article.frontmatter.cover_image} alt='' /> */}
           <Image
             src={article.frontmatter.cover_image}
             width={400}
@@ -18,8 +17,12 @@ const ArticleCard = ({ article }) => {
           </span>
         </div>
         <div className='card-desc'>
+          <span className='badge rounded-pill text-bg-secondary'>
+            {article.frontmatter.date}
+          </span>
           <h3>{article.frontmatter.title}</h3>
           <p>{article.frontmatter.excerpt}</p>
+          <p className='text-muted'>{article.frontmatter.author}</p>
           <Link legacyBehavior href={`${article.slug}`}>
             <a className='btn-card'>Read</a>
           </Link>
