@@ -1,3 +1,7 @@
+main {
+  min-height: 81vh;
+}
+
 /* animated drop-down: Start */
 @media (min-width: 768px) {
   .animate {
