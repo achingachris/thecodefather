@@ -4,6 +4,7 @@ import matter from 'gray-matter'
 import { marked } from 'marked'
 import Link from 'next/link'
 import Image from 'next/image'
+import Layout from '../layout/Layout'
 
 const ArticleDetail = ({
   frontmatter: { title, category, date, cover_image, author, author_image },
@@ -14,7 +15,7 @@ const ArticleDetail = ({
   // console.log(content)
   // console.log(slug)
   return (
-    <div>
+    <Layout>
       Article Detailed Here
       <br />
       <Link href='/'>Go Back</Link>
@@ -27,7 +28,7 @@ const ArticleDetail = ({
       <p>{author}</p>
       <p>{date}</p>
       <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
-    </div>
+    </Layout>
   )
 }
 

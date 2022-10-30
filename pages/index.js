@@ -11,21 +11,14 @@ const Home = ({ articles }) => {
   // console.log(articles)
   return (
     <Layout>
-      <p>
-        <a href='https://app.netlify.com/sites/codefather/deploys'>
-          <picture>
-            <img
-              alt='Netlify Status'
-              src='https://api.netlify.com/api/v1/badges/6a769aea-36f4-45f3-a317-166ca9adcb2c/deploy-status'
-            />
-          </picture>
-        </a>
-      </p>
-
       <h2 className='text-3xl font-bold underline'>Posts</h2>
-      {articles.map((article, index) => (
-        <Article key={index} article={article} />
-      ))}
+      <div className='container'>
+        <div className='row'>
+          {articles.map((article, index) => (
+            <Article key={index} article={article} />
+          ))}
+        </div>
+      </div>
 
       <Link href='/articles'>Articles</Link>
     </Layout>
