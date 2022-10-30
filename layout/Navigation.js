@@ -1,10 +1,12 @@
+import Link from 'next/link'
+
 const Navigation = () => {
   return (
     <nav className='navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top mb-5'>
       <div className='container'>
-        <a className='navbar-brand' href='#'>
-          chrisDevCode
-        </a>
+        <Link legacyBehavior href='/'>
+          <a className='navbar-brand'>chrisDevCode</a>
+        </Link>
         <button
           className='navbar-toggler'
           type='button'
@@ -19,23 +21,13 @@ const Navigation = () => {
         <div className='collapse navbar-collapse' id='navbarResponsive'>
           <ul className='navbar-nav ms-auto'>
             <li className='nav-item active'>
-              <a className='nav-link' href='#'>
-                Home
-              </a>
+              <Link legacyBehavior href='/talk-to-me'>
+                <a className='nav-link'>Talk to Me</a>
+              </Link>
             </li>
             <li className='nav-item'>
-              <a className='nav-link' href='#'>
-                About
-              </a>
-            </li>
-            <li className='nav-item'>
-              <a className='nav-link' href='#'>
-                Services
-              </a>
-            </li>
-            <li className='nav-item'>
-              <a className='nav-link' href='#'>
-                Contact
+              <a className='nav-link' href='https://github.com/achingachris/'>
+                GitHub
               </a>
             </li>
             <li className='nav-item dropdown'>
@@ -48,22 +40,29 @@ const Navigation = () => {
                 aria-haspopup='true'
                 aria-expanded='false'
               >
-                Click Me!
+                Categories
               </a>
-              {/* Here's the magic. Add the .animate and .slideIn classes to your .dropdown-menu and you're all set! */}
               <div
                 className='dropdown-menu dropdown-menu-end animate slideIn'
                 aria-labelledby='navbarDropdown'
               >
                 <a className='dropdown-item' href='#'>
-                  Action
+                  React
                 </a>
                 <a className='dropdown-item' href='#'>
-                  Another action
+                  Docker
                 </a>
                 <div className='dropdown-divider' />
-                <a className='dropdown-item' href='#'>
-                  Something else here
+                <a
+                  className='dropdown-item'
+                  href='https://app.netlify.com/sites/codefather/deploys'
+                >
+                  <picture>
+                    <img
+                      alt='Netlify Status'
+                      src='https://api.netlify.com/api/v1/badges/6a769aea-36f4-45f3-a317-166ca9adcb2c/deploy-status'
+                    />
+                  </picture>
                 </a>
               </div>
             </li>
