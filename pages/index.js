@@ -5,11 +5,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Article from '../components/Article'
 import { sortByDate } from '../utils/sortByDate'
+import Layout from '../layout/Layout'
 
 const Home = ({ articles }) => {
   // console.log(articles)
   return (
-    <>
+    <Layout>
       <p>
         <a href='https://app.netlify.com/sites/codefather/deploys'>
           <picture>
@@ -27,7 +28,7 @@ const Home = ({ articles }) => {
       ))}
 
       <Link href='/articles'>Articles</Link>
-    </>
+    </Layout>
   )
 }
 
