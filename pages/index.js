@@ -1,25 +1,23 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import Image from 'next/image'
-import Link from 'next/link'
-import Article from '../components/Article'
 import { sortByDate } from '../utils/sortByDate'
 import Layout from '../layout/Layout'
+import Hero from '../components/home/Hero'
+import ArticleList from '../components/home/ArticleList'
 
 const Home = ({ articles }) => {
   return (
     <Layout>
-      <h2 className='text-3xl font-bold underline'>Posts</h2>
+      <Hero />
       <div className='container'>
         <div className='row'>
+          {/* <div className='col-lg-8 col-md-8'></div> */}
           {articles.map((article, index) => (
-            <Article key={index} article={article} />
+            <ArticleList key={index} article={article} />
           ))}
         </div>
       </div>
-
-      <Link href='/articles'>Articles</Link>
     </Layout>
   )
 }

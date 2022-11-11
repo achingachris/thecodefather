@@ -1,6 +1,6 @@
 import ArticleCard from './ArticleCard'
 
-const Article = ({ article }) => {
+const ArticleList = ({ article }) => {
   return (
     <>
       <ArticleCard article={article} />
@@ -8,4 +8,4 @@ const Article = ({ article }) => {
   )
 }
 
-export default Article
+export default ArticleList

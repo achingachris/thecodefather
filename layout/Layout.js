@@ -1,10 +1,15 @@
+import Head from 'next/head'
 import Navigation from './Navigation'
 import Footer from './Footer'
+
 const Layout = ({ children }) => {
   return (
-    <div className='bg-dark text-white'>
+    <div>
+      <Head>
+        <title>the CodeFather</title>
+      </Head>
       <Navigation />
-      <main className='container mt-5'>{children}</main>
+      <main className='mt-5'>{children}</main>
       <Footer />
     </div>
   )
