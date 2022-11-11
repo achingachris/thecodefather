@@ -8,7 +8,6 @@ import { sortByDate } from '../utils/sortByDate'
 import Layout from '../layout/Layout'
 
 const Home = ({ articles }) => {
-  // console.log(articles)
   return (
     <Layout>
       <h2 className='text-3xl font-bold underline'>Posts</h2>
@@ -29,7 +28,6 @@ export default Home
 
 export async function getStaticProps() {
   const files = fs.readdirSync(path.join('articles'))
-  console.log(files)
 
   const articles = files.map((filename) => {
     const slug = filename.replace('.md', '')
@@ -40,13 +38,8 @@ export async function getStaticProps() {
     )
 
     const { data: frontmatter } = matter(markdownWithMeta)
-
-    // console.log(markdownWithMeta)
-
     return { slug, frontmatter }
   })
-
-  // console.log(articles)
 
   return {
     props: {
