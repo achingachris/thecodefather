@@ -11,23 +11,83 @@ const ArticleDetail = ({
   content,
   slug,
 }) => {
-  // console.log(frontmatter)
-  // console.log(content)
-  // console.log(slug)
   return (
     <Layout>
-      Article Detailed Here
-      <br />
-      <Link href='/'>Go Back</Link>
-      <br />
-      <h1>{title}</h1>
-      <h3> {category}</h3>
-      <Image src={cover_image} width={500} height={500} alt={title} />
-      <br />
-      <Image src={author_image} width={100} height={100} alt={author} />
-      <p>{author}</p>
-      <p>{date}</p>
-      <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+      <div className='container mt-5'>
+        <div className='row'>
+          <div className='col-lg-8'>
+            <header className='mb-4 mt-5'>
+              <h1 className='fw-bolder mb-1'>{title}</h1>
+              <div className='text-muted fst-italic mb-2'>
+                Posted on {date} by {author}
+              </div>
+              <a
+                className='badge bg-secondary text-decoration-none link-light'
+                href='#!'
+              >
+                {category}
+              </a>
+            </header>
+
+            <figure class='mb-4'>
+              <Image
+                class='img-fluid rounded'
+                src={cover_image}
+                width={900}
+                height={400}
+                alt={`Cover image for ${title}`}
+              />
+            </figure>
+
+            <section className='mb-5'>
+              <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+            </section>
+          </div>
+
+          <div className='col-lg-4 mt-5'>
+            <div className='card mb-4'>
+              <div className='card-header'>Categories</div>
+              <div className='card-body'>
+                <div className='row'>
+                  <div className='col-sm-6'>
+                    <ul className='list-unstyled mb-0'>
+                      <li>
+                        <a href='#!'>Web Design</a>
+                      </li>
+                      <li>
+                        <a href='#!'>HTML</a>
+                      </li>
+                      <li>
+                        <a href='#!'>Freebies</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className='col-sm-6'>
+                    <ul className='list-unstyled mb-0'>
+                      <li>
+                        <a href='#!'>JavaScript</a>
+                      </li>
+                      <li>
+                        <a href='#!'>CSS</a>
+                      </li>
+                      <li>
+                        <a href='#!'>Tutorials</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className='card mb-4'>
+              <div className='card-header'>Side Widget</div>
+              <div className='card-body'>
+                You can put anything you want inside of these side widgets. They
+                are easy to use, and feature the Bootstrap 5 card component!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </Layout>
   )
 }
