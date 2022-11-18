@@ -53,17 +53,6 @@ const Navigation = () => {
                   Docker
                 </a>
                 <div className='dropdown-divider' />
-                <a
-                  className='dropdown-item'
-                  href='https://app.netlify.com/sites/codefather/deploys'
-                >
-                  <picture>
-                    <img
-                      alt='Netlify Status'
-                      src='https://api.netlify.com/api/v1/badges/6a769aea-36f4-45f3-a317-166ca9adcb2c/deploy-status'
-                    />
-                  </picture>
-                </a>
               </div>
             </li>
           </ul>
