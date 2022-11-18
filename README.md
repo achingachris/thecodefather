@@ -1,4 +1,6 @@
-# ChrisDevCode : [![Netlify Status](https://api.netlify.com/api/v1/badges/6a769aea-36f4-45f3-a317-166ca9adcb2c/deploy-status)](https://app.netlify.com/sites/codefather/deploys)
+# ChrisDevCode : The CodeFather
+
+[Notion](https://www.notion.so/chrisdevcode/db0638bea28d4d4d80f2654a2cbd7d5c?v=3e003a223e084715ba2f30527902895b)
 
 [PLACE_FOR_YOUR_IMAGE]
 
@@ -11,6 +13,7 @@ Technical Articles, Tutorials and Project Documentation
 - ReactJS
 - NextJS
 - Markdown
+- Deployed on Verce;
 
 # Installation
 
@@ -23,23 +26,8 @@ To install `chrisdevcode - The Blog` locally, please follow the steps below:
 
 # Source
 
-[Is this project was part of the course? Is it your own idea? Is it came from community?]
-
-**Example:**
-
-This project is done as part of the SheCodes course curriculum.
+This is my solo Project, Yes I did it. Seriously, I did it. I am the `CodeFather`
 
 # Contribution
 
-Feel free to contribute in any way possible. To contribute, please do the following:
-
-- `git clone` this repo
-- Go to the root folder of this project and checkout to another branch
-- `git checkout {your-nickname}-rename-title
-- Do your stuff
-- `git add .`
-- `git commit -m "any descriptive message"`
-- `git push origin {your-nickname}-rename-title`
-- Submit a PR for review
-
-# For beginners with love
+A Private Repo, so no contribution is allowed
