@@ -1,4 +1,12 @@
-## Using Postman Like a Pro!
+---
+title: "Using Postman Like A Pro"
+date: 'June 4, 2021'
+excerpt: 'How to use and configure Postman to test your APIs like a PRO!'
+cover_image: '/images/posts/img4.jpg'
+category: 'API'
+author: 'Chris Achinga'
+author_image: 'https://randomuser.me/api/portraits/women/12.jpg'
+---
 
 
 ![Alt Text](https://cdn.hashnode.com/res/hashnode/image/upload/v1647193211388/2AE6poQJJ.png)

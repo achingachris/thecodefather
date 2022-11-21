@@ -1,4 +1,12 @@
-## React & Bootstrap Starter Template
+---
+title: "React & Bootstrap Starter Template"
+date: 'December 2, 2020'
+excerpt: 'How I made a ReactJS Starter template, integrated with Bootstrap SCSS'
+cover_image: '/images/posts/img4.jpg'
+category: 'React'
+author: 'Chris Achinga'
+author_image: 'https://randomuser.me/api/portraits/women/12.jpg'
+---
 
 
 %[https://react-bootstrap-temp.netlify.app/]

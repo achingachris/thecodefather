@@ -1,4 +1,13 @@
-## Why I Took a Break From Writing.
+---
+title: "Why I Took a Break From Writing"
+date: 'September 14, 2021'
+excerpt: 'I needed it, took a quick skill nap! Guess who came back with a bang!'
+cover_image: '/images/posts/img4.jpg'
+category: 'Personal'
+author: 'Chris Achinga'
+author_image: 'https://randomuser.me/api/portraits/women/12.jpg'
+---
+
 
 
 > 
