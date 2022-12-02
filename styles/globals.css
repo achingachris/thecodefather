@@ -160,3 +160,37 @@ a.btn-card {
   color: #fff;
 }
 /* End card section */
+
+/* styling code snippet */
+pre code {
+  display: block;
+  background: #272822;
+  color: #f8f8f2;
+  white-space: pre;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+  max-width: 100%;
+  min-width: 100px;
+  padding: 0;
+}
+
+code {
+  font-family: MyFancyCustomFont, monospace;
+  font-size: inherit;
+  background-color: #272822;
+  color: #f8f8f2;
+  border-radius: 0.3rem;
+  padding: 4px 5px 5px;
+  white-space: nowrap;
+}
+
+p > code,
+li > code,
+dd > code,
+td > code {
+  background: #272822;
+  word-wrap: break-word;
+  box-decoration-break: clone;
+  padding: 0.1rem 0.3rem 0.2rem;
+  border-radius: 0.2rem;
+}
