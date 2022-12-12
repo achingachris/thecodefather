@@ -1,47 +1,45 @@
-import fs from 'fs'
-import path from 'path'
-import matter from 'gray-matter'
-import { sortByDate } from '../utils/sortByDate'
-import Layout from '../layout/Layout'
-import Hero from '../components/home/Hero'
-import ArticleList from '../components/home/ArticleList'
+import Image from 'next/image'
 
-const Home = ({ articles }) => {
+const Home = () => {
   return (
-    <Layout>
-      <Hero />
-      <div className='container'>
-        <div className='row'>
-          {/* <div className='col-lg-8 col-md-8'></div> */}
-          {articles.map((article, index) => (
-            <ArticleList key={index} article={article} />
-          ))}
+    <>
+      <header className='page-header-ui page-header-ui-light bg-white'>
+        <div className='page-header-ui-content'>
+          <div className='container px-5'>
+            <div className='row gx-5 justify-content-center'>
+              <div className='col-xl-8 col-lg-10 text-center'>
+                <Image
+                  className='mb-4'
+                  src='/redditavataar.png'
+                  style={{ width: '15rem' }}
+                  width={200}
+                  height={200}
+                  alt='...'
+                />
+                <h1 className='page-header-ui-title'>Chris Achinga</h1>
+                <p className='page-header-ui-text'>
+                  I write Code on{' '}
+                  <a href='https://github.com/achingachris/'>GitHub</a> and
+                  <a href='https://chrisdevcode.hashnode.dev/'> articles</a>.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </Layout>
+        <div className='svg-border-rounded text-light'>
+          {/* Rounded SVG Border*/}
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            viewBox='0 0 144.54 17.34'
+            preserveAspectRatio='none'
+            fill='currentColor'
+          >
+            <path d='M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0' />
+          </svg>
+        </div>
+      </header>
+    </>
   )
 }
 
 export default Home
-
-export async function getStaticProps() {
-  const files = fs.readdirSync(path.join('articles'))
-
-  const articles = files.map((filename) => {
-    const slug = filename.replace('.md', '')
-
-    const markdownWithMeta = fs.readFileSync(
-      path.join('articles', filename),
-      'utf-8'
-    )
-
-    const { data: frontmatter } = matter(markdownWithMeta)
-    return { slug, frontmatter }
-  })
-
-  return {
-    props: {
-      articles: articles.sort(sortByDate),
-    },
-  }
-}
