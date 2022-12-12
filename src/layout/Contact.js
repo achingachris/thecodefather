@@ -1,3 +1,5 @@
+import { FiMail, FiLinkedin } from 'react-icons/fi'
+
 const Contact = () => {
   return (
     <section className='bg-light py-10'>
@@ -14,7 +16,8 @@ const Contact = () => {
                 <div className='card'>
                   <div className='card-body'>
                     <div className='icon-stack icon-stack-lg bg-orange text-white mb-3'>
-                      <i data-feather='mail' />
+                      {/* <i data-feather='mail' /> */}
+                      <FiMail />
                     </div>
                     <div className='small'>
                       <a href='mailto:achinga.chris@gmail.com'>
@@ -28,9 +31,13 @@ const Contact = () => {
                 <div className='card'>
                   <div className='card-body'>
                     <div className='icon-stack icon-stack-lg bg-green text-white mb-3'>
-                      <i data-feather='smartphone' />
+                      <FiLinkedin />
                     </div>
-                    <div className='small'>LinkedIn</div>
+                    <div className='small'>
+                      <a href='https://www.linkedin.com/in/chrisachinga/'>
+                        LinkedIn
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
