@@ -1,6 +1,7 @@
 import Header from '../../src/components/articlespages/Header'
 import ArticleCard from '../../src/components/articlespages/ArticleCard'
 import Pagination from '../../src/components/articlespages/Pagination'
+import NewsLetterCard from '../../src/components/articlespages/NewsLetterCard'
 
 const ArticlesHome = () => {
   return (
@@ -12,47 +13,7 @@ const ArticlesHome = () => {
             className='card post-preview post-preview-featured lift mb-5 overflow-hidden'
             href='#!'
           >
-            <div className='row g-0'>
-              <div className='col-lg-5'>
-                <div
-                  className='post-preview-featured-img'
-                  style={{
-                    backgroundImage:
-                      'url("https://source.unsplash.com/vZJdYl5JVXY/660x360")',
-                  }}
-                />
-              </div>
-              <div className='col-lg-7'>
-                <div className='card-body'>
-                  <div className='py-5'>
-                    <h5 className='card-title'>
-                      Boots on the Ground, Inclusive Thought Provoking Ideas
-                    </h5>
-                    <p className='card-text'>
-                      Empower communities and energize engaging ideas; scale and
-                      impact do-gooders while disruptring industries. Venture
-                      philanthropy benefits corporations and people by moving
-                      the needle.
-                    </p>
-                  </div>
-                  <hr />
-                  <div className='post-preview-meta'>
-                    <img
-                      className='post-preview-meta-img'
-                      src='assets/img/illustrations/profiles/profile-1.png'
-                    />
-                    <div className='post-preview-meta-details'>
-                      <div className='post-preview-meta-details-name'>
-                        Valerie Luna
-                      </div>
-                      <div className='post-preview-meta-details-date'>
-                        Feb 5 · 6 min read
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <NewsLetterCard />
           </a>
           <div className='row gx-5'>
             <ArticleCard />

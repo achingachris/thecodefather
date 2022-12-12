@@ -7,8 +7,8 @@ const Navbar = () => {
         <ul className='nav nav-pills'>
           <li className='nav-item'>
             <Link href='/' legacyBehavior>
-            <a className='nav-link active' aria-current='page'>
-              Home
+              <a className='nav-link active' aria-current='page'>
+                Home
               </a>
             </Link>
           </li>
@@ -18,19 +18,14 @@ const Navbar = () => {
             </Link>
           </li>
           <li className='nav-item'>
-            <a href='#' className='nav-link'>
-              Projects
-            </a>
+            <Link href='/projects' legacyBehavior>
+              <a className='nav-link'>Projects</a>
+            </Link>
           </li>
           <li className='nav-item'>
-            <a href='#' className='nav-link'>
-              Resume
-            </a>
-          </li>
-          <li className='nav-item'>
-            <a href='#' className='nav-link'>
-              Contact
-            </a>
+            <Link href='/resume' legacyBehavior>
+              <a className='nav-link'>Resume</a>
+            </Link>
           </li>
         </ul>
       </header>
