@@ -1,9 +1,12 @@
+import { ApolloClient, InMemoryCache, gql } from '@apollo/client'
+
 import Header from '../../src/components/articlespages/Header'
 import ArticleCard from '../../src/components/articlespages/ArticleCard'
 import Pagination from '../../src/components/articlespages/Pagination'
 import NewsLetterCard from '../../src/components/articlespages/NewsLetterCard'
 
-const ArticlesHome = () => {
+const ArticlesHome = ({ posts }) => {
+  console.log('POSTS', posts)
   return (
     <>
       <Header />
@@ -16,14 +19,17 @@ const ArticlesHome = () => {
             <NewsLetterCard />
           </a>
           <div className='row gx-5'>
-            <ArticleCard />
-            <ArticleCard />
-            <ArticleCard />
-            <ArticleCard />
-            <ArticleCard />
-            <ArticleCard />
-            <ArticleCard />
-            <ArticleCard />
+            {posts.map((post) => {
+              return (
+                <ArticleCard
+                  key={post._id}
+                  title={post.title}
+                  brief={post.brief}
+                  date={post.dateAdded}
+                  coverimage={post.coverImage}
+                />
+              )
+            })}
           </div>
           <Pagination />
         </div>
@@ -44,3 +50,35 @@ const ArticlesHome = () => {
 }
 
 export default ArticlesHome
+
+export async function getStaticProps(context) {
+  const client = new ApolloClient({
+    uri: 'https://api.hashnode.com/',
+    cache: new InMemoryCache(),
+  })
+
+  const { data } = await client.query({
+    query: gql`
+      query GetPosts {
+        user(username: "chrisdevcode") {
+          publication {
+            posts(page: 0) {
+              _id
+              dateAdded
+              coverImage
+              slug
+              title
+              brief
+            }
+          }
+        }
+      }
+    `,
+  })
+
+  return {
+    props: {
+      posts: data.user.publication.posts,
+    },
+  }
+}
