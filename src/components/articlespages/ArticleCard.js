@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 const ArticleCard = () => {
   return (
@@ -8,7 +9,7 @@ const ArticleCard = () => {
           <img
             className='card-img-top'
             src='https://source.unsplash.com/KE0nC8-58MQ/660x360'
-            alt='...'
+            alt='..'
           />
           <div className='card-body'>
             <h5 className='card-title'>Invest In Social Impact</h5>
@@ -18,16 +19,19 @@ const ArticleCard = () => {
           </div>
           <div className='card-footer'>
             <div className='post-preview-meta'>
-              <img
+              <Image
                 className='post-preview-meta-img'
-                src='assets/img/illustrations/profiles/profile-2.png'
+                width='36'
+                height='36'
+                src='/redditavataar.png'
+                alt='Chris Achinga Reddit Avatar'
               />
               <div className='post-preview-meta-details'>
                 <div className='post-preview-meta-details-name'>
-                  Aariz Fischer
+                  Chris Achinga
                 </div>
                 <div className='post-preview-meta-details-date'>
-                  Feb 4 · 5 min read
+                  Feb 4, · 5 min read
                 </div>
               </div>
             </div>
