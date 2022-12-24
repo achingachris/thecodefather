@@ -1,3 +1,6 @@
+import Image from 'next/image'
+import Link from 'next/link'
+
 const ArticlePost = () => {
   return (
     <section className='bg-light py-10'>
@@ -6,7 +9,7 @@ const ArticlePost = () => {
           <div className='col-lg-10 col-xl-8'>
             <div className='single-post'>
               <h1>Boots on the Ground, Inclusive Thought Provoking Ideas</h1>
-              <p className='lead'>
+              <p className='text-muted '>
                 Empower communities and energize engaging ideas; scale and
                 impact do-gooders while disruptring industries. Venture
                 philanthropy benefits corporations and people by moving the
@@ -14,16 +17,19 @@ const ArticlePost = () => {
               </p>
               <div className='d-flex align-items-center justify-content-between mb-5'>
                 <div className='single-post-meta me-4'>
-                  <img
+                  <Image
                     className='single-post-meta-img'
-                    src='assets/img/illustrations/profiles/profile-1.png'
+                    width={36}
+                    height={36}
+                    alt='Chris Achinga Technical Articles'
+                    src='/redditavataar.png'
                   />
                   <div className='single-post-meta-details'>
                     <div className='single-post-meta-details-name'>
-                      Valerie Luna
+                      Chris Achinga
                     </div>
                     <div className='single-post-meta-details-date'>
-                      Feb 5 · 6 min read
+                      Feb 5, 2022 · 6 min read
                     </div>
                   </div>
                 </div>
@@ -128,12 +134,11 @@ const ArticlePost = () => {
                 </p>
                 <hr className='my-5' />
                 <div className='text-center'>
-                  <a
-                    className='btn btn-transparent-dark'
-                    href='page-blog-overview.html'
-                  >
-                    Back to Blog Overview
-                  </a>
+                  <Link legacyBehavior href='/articles'>
+                    <a className='btn btn-transparent-dark'>
+                      Back to Articles Overview
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>

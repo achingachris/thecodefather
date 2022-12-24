@@ -31,7 +31,7 @@ const ArticleCard = () => {
                   Chris Achinga
                 </div>
                 <div className='post-preview-meta-details-date'>
-                  Feb 4, 2022 · 5 min read
+                  Feb 4, · 5 min read
                 </div>
               </div>
             </div>
