@@ -27,11 +27,12 @@ const ArticlesHome = ({ posts }) => {
                   brief={post.brief}
                   date={post.dateAdded}
                   coverimage={post.coverImage}
+                  slug={post.slug}
                 />
               )
             })}
           </div>
-          <Pagination />
+          {/* <Pagination /> */}
         </div>
         <div className='svg-border-rounded text-light'>
           {/* Rounded SVG Border*/}

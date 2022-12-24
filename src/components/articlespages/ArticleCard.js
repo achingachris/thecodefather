@@ -1,16 +1,16 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-const ArticleCard = ({ title, brief, date, coverimage }) => {
+const ArticleCard = ({ title, brief, date, coverimage, slug }) => {
   return (
     <div className='col-md-6 col-xl-4 mb-5'>
-      <Link href='/articles/article-slug-here' legacyBehavior>
-        <a className='card post-preview lift h-100'>
-          <img
-            className='card-img-top'
-            src={coverimage}
-            alt='..'
-          />
+      <>
+        <a
+          className='card post-preview lift h-100'
+          href={`https://chrisdevcode.hashnode.dev/${slug}`}
+          target='_blank'
+        >
+          <img className='card-img-top' src={coverimage} alt='..' />
           <div className='card-body'>
             <h5 className='card-title'>{title}</h5>
             <p className='card-text'>{brief}</p>
@@ -35,7 +35,7 @@ const ArticleCard = ({ title, brief, date, coverimage }) => {
             </div>
           </div>
         </a>
-      </Link>
+      </>
     </div>
   )
 }
