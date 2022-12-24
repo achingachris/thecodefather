@@ -1,4 +1,10 @@
 const Footer = () => {
+  // get current year
+  const date = new Date()
+  const year = date.getFullYear()
+
+  // get current month in words
+
   return (
     <div className='container'>
       <footer className='py-3 my-4'>
@@ -29,7 +35,7 @@ const Footer = () => {
             </a>
           </li>
         </ul>
-        <p className='text-center text-muted'>© 2022 Company, Inc</p>
+        <p className='text-center text-muted'>© {year} Chris Ndanyi Achinga</p>
       </footer>
     </div>
   )
