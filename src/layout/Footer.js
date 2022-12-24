@@ -3,8 +3,6 @@ const Footer = () => {
   const date = new Date()
   const year = date.getFullYear()
 
-  // get current month in words
-
   return (
     <div className='container'>
       <footer className='py-3 my-4'>
