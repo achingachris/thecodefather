@@ -1,21 +1,19 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-const ArticleCard = () => {
+const ArticleCard = ({ title, brief, date, coverimage, slug }) => {
   return (
     <div className='col-md-6 col-xl-4 mb-5'>
-      <Link href='/articles/article-slug-here' legacyBehavior>
-        <a className='card post-preview lift h-100'>
-          <img
-            className='card-img-top'
-            src='https://source.unsplash.com/KE0nC8-58MQ/660x360'
-            alt='..'
-          />
+      <>
+        <a
+          className='card post-preview lift h-100'
+          href={`https://chrisdevcode.hashnode.dev/${slug}`}
+          target='_blank'
+        >
+          <img className='card-img-top' src={coverimage} alt='..' />
           <div className='card-body'>
-            <h5 className='card-title'>Invest In Social Impact</h5>
-            <p className='card-text'>
-              Expose the truth, problem-solvers impact mobilized green spaces.
-            </p>
+            <h5 className='card-title'>{title}</h5>
+            <p className='card-text'>{brief}</p>
           </div>
           <div className='card-footer'>
             <div className='post-preview-meta'>
@@ -31,15 +29,22 @@ const ArticleCard = () => {
                   Chris Achinga
                 </div>
                 <div className='post-preview-meta-details-date'>
-                  Feb 4, · 5 min read
+                  {date} · 5 min read
                 </div>
               </div>
             </div>
           </div>
         </a>
-      </Link>
+      </>
     </div>
   )
 }
 
 export default ArticleCard
+
+ArticleCard.defaultProps = {
+  title: 'Article Title',
+  brief: 'Article Brief',
+  date: 'Date',
+  coverimage: 'https://source.unsplash.com/KE0nC8-58MQ/660x360',
+}
