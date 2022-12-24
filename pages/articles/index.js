@@ -6,7 +6,7 @@ import Pagination from '../../src/components/articlespages/Pagination'
 import NewsLetterCard from '../../src/components/articlespages/NewsLetterCard'
 
 const ArticlesHome = ({ posts }) => {
-  console.log('POSTS', posts)
+  // console.log('POSTS', posts)
   return (
     <>
       <Header />
