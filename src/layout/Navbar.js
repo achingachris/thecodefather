@@ -17,16 +17,16 @@ const Navbar = () => {
               <a className='nav-link'>Articles</a>
             </Link>
           </li>
-          <li className='nav-item'>
+          {/* <li className='nav-item'>
             <Link href='/projects' legacyBehavior>
               <a className='nav-link'>Projects</a>
             </Link>
-          </li>
-          <li className='nav-item'>
+          </li> */}
+          {/* <li className='nav-item'>
             <Link href='/resume' legacyBehavior>
               <a className='nav-link'>Resume</a>
             </Link>
-          </li>
+          </li> */}
         </ul>
       </header>
     </div>
