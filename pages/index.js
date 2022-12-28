@@ -1,6 +1,14 @@
+import { useEffect } from 'react'
 import Image from 'next/image'
+import * as ReactGA from '../config/ga'
+import { pageview } from 'react-ga'
 
 const Home = () => {
+  
+  useEffect(() => {
+    pageview(window.location.pathname + window.location.search)
+  }, [])
+
   return (
     <>
       <header className='page-header-ui page-header-ui-light bg-white'>
