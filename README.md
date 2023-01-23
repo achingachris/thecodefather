@@ -1,4 +1,4 @@
-# ChrisDevCode : The CodeFather
+# ChrisDevCod (the CodeFather)
 
 [Notion](https://www.notion.so/chrisdevcode/db0638bea28d4d4d80f2654a2cbd7d5c?v=3e003a223e084715ba2f30527902895b)
 
