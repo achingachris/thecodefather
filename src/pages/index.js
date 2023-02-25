@@ -1,55 +1,7 @@
-import Image from "next/image"
+import Image from 'next/image'
 export default function Home() {
   return (
     <>
-      {/* Navigation*/}
-      <nav
-        className='navbar navbar-expand-lg bg-secondary text-uppercase fixed-top'
-        id='mainNav'
-      >
-        <div className='container'>
-          <a className='navbar-brand' href='#page-top'>
-            Start Bootstrap
-          </a>
-          <button
-            className='navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded'
-            type='button'
-            data-bs-toggle='collapse'
-            data-bs-target='#navbarResponsive'
-            aria-controls='navbarResponsive'
-            aria-expanded='false'
-            aria-label='Toggle navigation'
-          >
-            Menu
-            <i className='fas fa-bars' />
-          </button>
-          <div className='collapse navbar-collapse' id='navbarResponsive'>
-            <ul className='navbar-nav ms-auto'>
-              <li className='nav-item mx-0 mx-lg-1'>
-                <a
-                  className='nav-link py-3 px-0 px-lg-3 rounded'
-                  href='#portfolio'
-                >
-                  Portfolio
-                </a>
-              </li>
-              <li className='nav-item mx-0 mx-lg-1'>
-                <a className='nav-link py-3 px-0 px-lg-3 rounded' href='#about'>
-                  About
-                </a>
-              </li>
-              <li className='nav-item mx-0 mx-lg-1'>
-                <a
-                  className='nav-link py-3 px-0 px-lg-3 rounded'
-                  href='#contact'
-                >
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
       {/* Masthead*/}
       <header className='masthead bg-primary text-white text-center'>
         <div className='container d-flex align-items-center flex-column'>
@@ -408,53 +360,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* Footer*/}
-      <footer className='footer text-center'>
-        <div className='container'>
-          <div className='row'>
-            {/* Footer Location*/}
-            <div className='col-lg-4 mb-5 mb-lg-0'>
-              <h4 className='text-uppercase mb-4'>Location</h4>
-              <p className='lead mb-0'>
-                2215 John Daniel Drive
-                <br />
-                Clark, MO 65243
-              </p>
-            </div>
-            {/* Footer Social Icons*/}
-            <div className='col-lg-4 mb-5 mb-lg-0'>
-              <h4 className='text-uppercase mb-4'>Around the Web</h4>
-              <a className='btn btn-outline-light btn-social mx-1' href='#!'>
-                <i className='fab fa-fw fa-facebook-f' />
-              </a>
-              <a className='btn btn-outline-light btn-social mx-1' href='#!'>
-                <i className='fab fa-fw fa-twitter' />
-              </a>
-              <a className='btn btn-outline-light btn-social mx-1' href='#!'>
-                <i className='fab fa-fw fa-linkedin-in' />
-              </a>
-              <a className='btn btn-outline-light btn-social mx-1' href='#!'>
-                <i className='fab fa-fw fa-dribbble' />
-              </a>
-            </div>
-            {/* Footer About Text*/}
-            <div className='col-lg-4'>
-              <h4 className='text-uppercase mb-4'>About Freelancer</h4>
-              <p className='lead mb-0'>
-                Freelance is a free to use, MIT licensed Bootstrap theme created
-                by
-                <a href='http://startbootstrap.com'>Start Bootstrap</a>.
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
-      {/* Copyright Section*/}
-      <div className='copyright py-4 text-center text-white'>
-        <div className='container'>
-          <small>Copyright © Your Website 2022</small>
-        </div>
-      </div>
+
       {/* Portfolio Modals*/}
       {/* Portfolio Modal 1*/}
       <div
