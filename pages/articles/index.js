@@ -18,6 +18,18 @@ const ArticlesHome = ({ posts }) => {
           >
             <NewsLetterCard />
           </a>
+          <div className='row'>
+            <div className='container'>
+              <iframe
+                src='https://thecodefather.substack.com/embed'
+                width={480}
+                height={320}
+                style={{ border: '1px solid #EEE', background: 'white' }}
+                frameBorder={0}
+                scrolling='no'
+              />
+            </div>
+          </div>
           <div className='row gx-5'>
             {posts.map((post) => {
               return (
