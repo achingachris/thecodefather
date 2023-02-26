@@ -2,12 +2,12 @@ import Image from 'next/image'
 
 const Header = () => {
   return (
-    <header className='masthead bg-primary text-white text-center'>
+    <header className='masthead bg-white text-dark text-center'>
       <div className='container d-flex align-items-center flex-column'>
         {/* Masthead Avatar Image*/}
         <Image
           className='masthead-avatar mb-5'
-          src='/assets/img/avataaars.svg'
+          src='/redditavatar.png'
           alt='...'
           width={200}
           height={200}
@@ -25,11 +25,11 @@ const Header = () => {
         {/* Masthead Subheading*/}
         <p className='masthead-subheading font-weight-light mb-0'>
           I write Code on{' '}
-          <a href='https://github.com/achingachris/' className='text-white'>
+          <a href='https://github.com/achingachris/' >
             GitHub
           </a>{' '}
           and
-          <a href='https://chrisdevcode.hashnode.dev/' className='text-white'>
+          <a href='https://chrisdevcode.hashnode.dev/' >
             {' '}
             articles
           </a>

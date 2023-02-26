@@ -1,8 +1,12 @@
-import React from 'react'
-
 const MyArticles = () => {
   return (
-    <div>MyArticles</div>
+    <>
+      <div className='container'>
+        <h2 className='page-section-heading text-center text-uppercase'>
+          Articles
+        </h2>
+      </div>
+    </>
   )
 }
 
