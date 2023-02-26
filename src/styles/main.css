@@ -11507,3 +11507,9 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+
+
+main {
+  min-height: 75vh;
+}

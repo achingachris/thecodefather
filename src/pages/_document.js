@@ -8,7 +8,7 @@ export default function Document() {
         <script
           async
           src='https://use.fontawesome.com/releases/v6.1.0/js/all.js'
-          crossorigin='anonymous'
+          crossOrigin='anonymous'
         ></script>
         {/* <!-- Google fonts--> */}
         <link

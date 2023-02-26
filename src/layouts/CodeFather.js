@@ -1,13 +1,17 @@
+import Head from 'next/head'
 import Footer from './Footer'
 import Navigator from './Navigator'
 
 const CodeFather = ({ children }) => {
   return (
-    <div>
+    <>
+      <Head>
+        <title>Chris Achinga | the codeFather</title>
+      </Head>
       <Navigator />
-      {children}
+      <main>{children}</main>
       <Footer />
-    </div>
+    </>
   )
 }
 
