@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-const ArticleCard = ({ title, slug, image }) => {
+const ArticleCard = ({ title, slug, image, brief }) => {
   return (
     <div className='mt-5'>
       <div className='row'>
@@ -18,10 +18,7 @@ const ArticleCard = ({ title, slug, image }) => {
         <div className='col-md-5'>
           <h3>{title}</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
-            veniam exercitationem expedita laborum at voluptate. Labore,
-            voluptates totam at aut nemo deserunt rem magni pariatur quos
-            perspiciatis atque eveniet unde.
+            {brief}
           </p>
           <a
             className='btn btn-primary'

@@ -29,7 +29,12 @@ const MyArticles = ({ posts }) => {
             //   </a>
             // </div>
             <div key={post._id}>
-              <ArticleCard title={post.title} slug={post.slug} image={post.coverImage} />
+              <ArticleCard
+                title={post.title}
+                slug={post.slug}
+                image={post.coverImage}
+                brief={post.brief}
+              />
             </div>
           )
         })}
