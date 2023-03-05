@@ -33,11 +33,10 @@ const Footer = () => {
             </div>
             {/* Footer About Text*/}
             <div className='col-lg-4'>
-              <h4 className='text-uppercase mb-4'>About Freelancer</h4>
+              <h4 className='text-uppercase mb-4'>About This Website</h4>
               <p className='lead mb-0'>
-                Freelance is a free to use, MIT licensed Bootstrap theme created
-                by
-                <a href='http://startbootstrap.com'>Start Bootstrap</a>.
+                A template on steriods. From HTML to NextJS with React Stuff.
+                Feel free to ask for a source Code. I do not bite, at all.
               </p>
             </div>
           </div>
