@@ -4,7 +4,7 @@ const AboutMe = () => {
       <div className='container'>
         {/* About Section Heading*/}
         <h2 className='page-section-heading text-center text-uppercase'>
-        who is this guy?
+          who is this guy?
         </h2>
         {/* Icon Divider*/}
         <div className='divider-custom divider-light'>

@@ -3,8 +3,9 @@ import Link from 'next/link'
 const Navigator = () => {
   return (
     <nav
-      className='navbar navbar-expand-lg bg-secondary text-uppercase fixed-top'
+      className='navbar navbar-expand-lg bg-secondary text-uppercase fixed-top mb-5'
       id='mainNav'
+
     >
       <div className='container'>
         <Link href='/' legacyBehavior>
