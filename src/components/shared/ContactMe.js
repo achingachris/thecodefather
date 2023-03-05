@@ -17,14 +17,7 @@ const ContactMe = () => {
         {/* Contact Section Form*/}
         <div className='row justify-content-center'>
           <div className='col-lg-8 col-xl-7'>
-            {/* * * * * * * * * * * * * * * **/}
-            {/* * * SB Forms Contact Form * **/}
-            {/* * * * * * * * * * * * * * * **/}
-            {/* This form is pre-integrated with SB Forms.*/}
-            {/* To make this form functional, sign up at*/}
-            {/* https://startbootstrap.com/solution/contact-forms*/}
-            {/* to get an API token!*/}
-            <form id='contactForm' data-sb-form-api-token='API_TOKEN'>
+            <form id='contactForm'>
               {/* Name input*/}
               <div className='form-floating mb-3'>
                 <input
@@ -32,15 +25,9 @@ const ContactMe = () => {
                   id='name'
                   type='text'
                   placeholder='Enter your name...'
-                  data-sb-validations='required'
+                  required
                 />
                 <label htmlFor='name'>Full name</label>
-                <div
-                  className='invalid-feedback'
-                  data-sb-feedback='name:required'
-                >
-                  A name is required.
-                </div>
               </div>
               {/* Email address input*/}
               <div className='form-floating mb-3'>
@@ -49,7 +36,7 @@ const ContactMe = () => {
                   id='email'
                   type='email'
                   placeholder='name@example.com'
-                  data-sb-validations='required,email'
+                  required
                 />
                 <label htmlFor='email'>Email address</label>
                 <div
@@ -65,23 +52,7 @@ const ContactMe = () => {
                   Email is not valid.
                 </div>
               </div>
-              {/* Phone number input*/}
-              <div className='form-floating mb-3'>
-                <input
-                  className='form-control'
-                  id='phone'
-                  type='tel'
-                  placeholder='(123) 456-7890'
-                  data-sb-validations='required'
-                />
-                <label htmlFor='phone'>Phone number</label>
-                <div
-                  className='invalid-feedback'
-                  data-sb-feedback='phone:required'
-                >
-                  A phone number is required.
-                </div>
-              </div>
+
               {/* Message input*/}
               <div className='form-floating mb-3'>
                 <textarea
@@ -126,7 +97,7 @@ const ContactMe = () => {
               </div>
               {/* Submit Button*/}
               <button
-                className='btn btn-primary btn-xl disabled'
+                className='btn btn-primary btn-xl'
                 id='submitButton'
                 type='submit'
               >

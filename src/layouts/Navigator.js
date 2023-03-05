@@ -7,9 +7,11 @@ const Navigator = () => {
       id='mainNav'
     >
       <div className='container'>
-        <a className='navbar-brand' href='#page-top'>
+        <Link href='/' legacyBehavior>
+        <a className='navbar-brand'>
           Achinga, Chris
-        </a>
+          </a>
+        </Link>
         <button
           className='navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded'
           type='button'
