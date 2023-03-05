@@ -22,12 +22,6 @@ const MyArticles = ({ posts }) => {
       <div className='container'>
         {posts.map((post) => {
           return (
-            // <div key={post._id}>
-            //   <h1>{post.title}</h1>
-            //   <a href={`https://chrisdevcode.hashnode.dev/${post.slug}`}>
-            //     Read
-            //   </a>
-            // </div>
             <div key={post._id}>
               <ArticleCard
                 title={post.title}
