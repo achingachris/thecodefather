@@ -27,11 +27,11 @@ const Navigator = () => {
         </button>
         <div className='collapse navbar-collapse' id='navbarResponsive'>
           <ul className='navbar-nav ms-auto'>
-            <li className='nav-item mx-0 mx-lg-1'>
+            {/* <li className='nav-item mx-0 mx-lg-1'>
               <Link href='/my-resume' legacyBehavior>
                 <a className='nav-link py-3 px-0 px-lg-3 rounded'>my resume</a>
               </Link>
-            </li>
+            </li> */}
             <li className='nav-item mx-0 mx-lg-1'>
               <Link href='/my-articles' legacyBehavior>
                 <a className='nav-link py-3 px-0 px-lg-3 rounded'>
@@ -39,11 +39,11 @@ const Navigator = () => {
                 </a>
               </Link>
             </li>
-            <li className='nav-item mx-0 mx-lg-1'>
+            {/* <li className='nav-item mx-0 mx-lg-1'>
               <a className='nav-link py-3 px-0 px-lg-3 rounded' href='#contact'>
                 Contact
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
