@@ -4,9 +4,11 @@ const Navigator = () => {
   return (
     <nav className='navbar navbar-expand-lg navbar-light bg-white py-3'>
       <div className='container px-5'>
-        <a className='navbar-brand' href='index.html'>
-          <span className='fw-bolder text-primary'>Start Bootstrap</span>
-        </a>
+        <Link href='/' legacyBehavior>
+          <a className='navbar-brand'>
+            <span className='fw-bolder text-primary'>Chris Achinga</span>
+          </a>
+        </Link>
         <button
           className='navbar-toggler'
           type='button'
@@ -21,24 +23,24 @@ const Navigator = () => {
         <div className='collapse navbar-collapse' id='navbarSupportedContent'>
           <ul className='navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder'>
             <li className='nav-item'>
-              <a className='nav-link' href='index.html'>
-                Home
-              </a>
+              <Link href='/' legacyBehavior>
+                <a className='nav-link'>Home</a>
+              </Link>
             </li>
             <li className='nav-item'>
-              <a className='nav-link' href='resume.html'>
-                Resume
-              </a>
+              <Link href='/resume' legacyBehavior>
+                <a className='nav-link'>Resume</a>
+              </Link>
             </li>
             <li className='nav-item'>
-              <a className='nav-link' href='projects.html'>
-                Projects
-              </a>
+              <Link href='/projects' legacyBehavior>
+                <a className='nav-link'>Projects</a>
+              </Link>
             </li>
             <li className='nav-item'>
-              <a className='nav-link' href='contact.html'>
-                Contact
-              </a>
+              <Link href='/contact' legacyBehavior>
+                <a className='nav-link'>Contact</a>
+              </Link>
             </li>
           </ul>
         </div>
