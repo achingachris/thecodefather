@@ -5,13 +5,10 @@ const Navigator = () => {
     <nav
       className='navbar navbar-expand-lg bg-secondary text-uppercase fixed-top mb-5'
       id='mainNav'
-
     >
       <div className='container'>
         <Link href='/' legacyBehavior>
-        <a className='navbar-brand'>
-          Achinga, Chris
-          </a>
+          <a className='navbar-brand'>Achinga, Chris</a>
         </Link>
         <button
           className='navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded'
