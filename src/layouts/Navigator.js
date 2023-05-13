@@ -2,45 +2,44 @@ import Link from 'next/link'
 
 const Navigator = () => {
   return (
-    <nav
-      className='navbar navbar-expand-lg bg-secondary text-uppercase fixed-top mb-5'
-      id='mainNav'
-    >
-      <div className='container'>
-        <Link href='/' legacyBehavior>
-          <a className='navbar-brand'>Achinga, Chris</a>
-        </Link>
+    <nav className='navbar navbar-expand-lg navbar-light bg-white py-3'>
+      <div className='container px-5'>
+        <a className='navbar-brand' href='index.html'>
+          <span className='fw-bolder text-primary'>Start Bootstrap</span>
+        </a>
         <button
-          className='navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded'
+          className='navbar-toggler'
           type='button'
           data-bs-toggle='collapse'
-          data-bs-target='#navbarResponsive'
-          aria-controls='navbarResponsive'
+          data-bs-target='#navbarSupportedContent'
+          aria-controls='navbarSupportedContent'
           aria-expanded='false'
           aria-label='Toggle navigation'
         >
-          Menu
-          <i className='fas fa-bars' />
+          <span className='navbar-toggler-icon' />
         </button>
-        <div className='collapse navbar-collapse' id='navbarResponsive'>
-          <ul className='navbar-nav ms-auto'>
-            {/* <li className='nav-item mx-0 mx-lg-1'>
-              <Link href='/my-resume' legacyBehavior>
-                <a className='nav-link py-3 px-0 px-lg-3 rounded'>my resume</a>
-              </Link>
-            </li> */}
-            <li className='nav-item mx-0 mx-lg-1'>
-              <Link href='/my-articles' legacyBehavior>
-                <a className='nav-link py-3 px-0 px-lg-3 rounded'>
-                  my articles
-                </a>
-              </Link>
+        <div className='collapse navbar-collapse' id='navbarSupportedContent'>
+          <ul className='navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder'>
+            <li className='nav-item'>
+              <a className='nav-link' href='index.html'>
+                Home
+              </a>
             </li>
-            {/* <li className='nav-item mx-0 mx-lg-1'>
-              <a className='nav-link py-3 px-0 px-lg-3 rounded' href='#contact'>
+            <li className='nav-item'>
+              <a className='nav-link' href='resume.html'>
+                Resume
+              </a>
+            </li>
+            <li className='nav-item'>
+              <a className='nav-link' href='projects.html'>
+                Projects
+              </a>
+            </li>
+            <li className='nav-item'>
+              <a className='nav-link' href='contact.html'>
                 Contact
               </a>
-            </li> */}
+            </li>
           </ul>
         </div>
       </div>

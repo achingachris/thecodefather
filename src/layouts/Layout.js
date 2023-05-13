@@ -1,9 +1,10 @@
-import React from 'react'
+import Navigator from './Navigator'
 
-const Layout = () => {
+const Layout = ({ children }) => {
   return (
-    <div>
-      
+    <div className='d-flex flex-column h-100'>
+      <Navigator />
+      <main className='flex-shrink-0'>{children}</main>
     </div>
   )
 }
