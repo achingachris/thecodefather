@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 const Hero = () => {
   return (
     <header className='py-5'>
@@ -8,15 +9,15 @@ const Hero = () => {
             <div className='text-center text-xxl-start'>
               <div className='badge bg-gradient-primary-to-secondary text-white mb-4'>
                 <div className='text-uppercase'>
-                  Design · Development · Marketing
+                  Development · Technical Writing · Community
                 </div>
               </div>
               <div className='fs-3 fw-light text-muted'>
-                I can help your business to
+                I will make you and your business to
               </div>
               <h1 className='display-3 fw-bolder mb-5'>
                 <span className='text-gradient d-inline'>
-                  Get online and grow fast
+                  Get online and Be famous
                 </span>
               </h1>
               <div className='d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3'>
@@ -38,14 +39,10 @@ const Hero = () => {
           <div className='col-xxl-7'>
             {/* Header profile picture*/}
             <div className='d-flex justify-content-center mt-5 mt-xxl-0'>
-              <div className='profile bg-gradient-primary-to-secondary'>
+              <div className='profile bg-success'>
                 {/* TIP: For best results, use a photo with a transparent background like the demo example below*/}
                 {/* Watch a tutorial on how to do this on YouTube (link)*/}
-                <img
-                  className='profile-img'
-                  src='assets/profile.png'
-                  alt='...'
-                />
+                <img className='profile-img' src='me/full.png' alt='...' />
                 <div className='dots-1'>
                   {/* SVG Dots*/}
                   <svg

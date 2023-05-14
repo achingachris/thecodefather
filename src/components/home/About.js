@@ -9,22 +9,31 @@ const About = () => {
                 <span className='text-gradient d-inline'>About Me</span>
               </h2>
               <p className='lead fw-light mb-4'>
-                My name is Start Bootstrap and I help brands grow.
+                My name is Chris Achinga, and I make Softwares and websites that
+                makes you and your business get known.
               </p>
               <p className='text-muted'>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit
-                dolorum itaque qui unde quisquam consequatur autem. Eveniet
-                quasi nobis aliquid cumque officiis sed rem iure ipsa!
-                Praesentium ratione atque dolorem?
+                Chris is a Software Developer. He makes Software and websites
+                solutions using javaScript and Python languages. Chris also
+                writes technical articles and tutorials.
               </p>
               <div className='d-flex justify-content-center fs-2 gap-4'>
-                <a className='text-gradient' href='#!'>
+                <a
+                  className='text-gradient'
+                  href='https://twitter.com/achinga_chris'
+                >
                   <i className='bi bi-twitter' />
                 </a>
-                <a className='text-gradient' href='#!'>
+                <a
+                  className='text-gradient'
+                  href='https://www.linkedin.com/in/chrisachinga/'
+                >
                   <i className='bi bi-linkedin' />
                 </a>
-                <a className='text-gradient' href='#!'>
+                <a
+                  className='text-gradient'
+                  href='https://github.com/achingachris/'
+                >
                   <i className='bi bi-github' />
                 </a>
               </div>
