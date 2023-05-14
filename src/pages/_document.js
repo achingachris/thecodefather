@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-sync-scripts */
+/* eslint-disable @next/next/no-css-tags */
 /* eslint-disable @next/next/google-font-display */
 import { Html, Head, Main, NextScript } from 'next/document'
 
