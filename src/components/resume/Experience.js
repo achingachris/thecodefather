@@ -102,6 +102,40 @@ const Experience = () => {
         </div>
       </div>
       {/* Experience Card 3*/}
+      {/* Technical Writer */}
+      <div className='card shadow border-0 rounded-4 mb-5'>
+        <div className='card-body p-5'>
+          <div className='row align-items-center gx-5'>
+            <div className='col text-center text-lg-start mb-4 mb-lg-0'>
+              <div className='bg-light p-4 rounded-4'>
+                <div className='text-primary fw-bolder mb-2'>
+                  Jan 2020 - Present
+                </div>
+                <div className='small fw-bolder'>Technical Writing & Blogs</div>
+                <div className='small text-muted'>Contracts, and Personal</div>
+                <div className='small text-muted'>Around the World</div>
+              </div>
+            </div>
+            <div className='col-lg-8'>
+              <div>
+                <ol>
+                  <li>
+                    Simplifying complex programming concepts and guides to easy
+                    short principles in a friendly tone
+                  </li>
+                  <li>
+                    Worked with different companies in Software Development
+                    industries to write technical articles and tutorials for
+                    their products and marketing tutorials for tools and
+                    products.
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Experience Card 4*/}
       {/* Uhuru Pies */}
       <div className='card shadow border-0 rounded-4 mb-5'>
         <div className='card-body p-5'>
