@@ -1,4 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from 'next/link'
+
 const Hero = () => {
   return (
     <header className='py-5'>
@@ -21,18 +23,16 @@ const Hero = () => {
                 </span>
               </h1>
               <div className='d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3'>
-                <a
-                  className='btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder'
-                  href='resume.html'
-                >
-                  Resume
-                </a>
-                <a
-                  className='btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder'
-                  href='projects.html'
-                >
-                  Projects
-                </a>
+                <Link href='/resume' legacyBehavior>
+                  <a className='btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder'>
+                    Resume
+                  </a>
+                </Link>
+                <Link href='/projects' legacyBehavior>
+                  <a className='btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder'>
+                    Projects
+                  </a>
+                </Link>
               </div>
             </div>
           </div>

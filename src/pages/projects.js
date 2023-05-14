@@ -18,6 +18,8 @@ const projects = () => {
                 projectName='React Router and Bootstrap Starter Template'
                 projectDescription='React Bootstrap Starter is a starter template for react and bootstrap created by Chris Achinga. This theme uses Create React App, react-bootstrap and gh-pages.'
                 projectImageBanner='/projects/reactbootstrap.png'
+                projectGitHubLink='https://github.com/achingachris/react-router-bootstrap-starter'
+                projectLiveLink='https://react-bootstrap-temp.netlify.app/'
               />
             </div>
           </div>
