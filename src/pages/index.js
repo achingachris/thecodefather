@@ -1,14 +1,13 @@
-import AboutMe from '@/components/land/AboutMe'
-import Header from '@/components/land/Header'
-import ContactMe from '@/components/shared/ContactMe'
-import Image from 'next/image'
+import Hero from '@/components/home/Hero'
+import About from '@/components/home/About'
 
-export default function Home() {
+const home = () => {
   return (
     <>
-      <Header />
-      <AboutMe />
-      <ContactMe />
+      <Hero />
+      <About />
     </>
   )
 }
+
+export default home

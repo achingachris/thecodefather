@@ -1,10 +1,9 @@
-import CodeFather from '@/layouts/CodeFather'
-import '@/styles/main.css'
+import Layout from '@/layouts/Layout'
 
 export default function App({ Component, pageProps }) {
   return (
-    <CodeFather>
+    <Layout>
       <Component {...pageProps} />
-    </CodeFather>
+    </Layout>
   )
 }
