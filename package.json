@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@apollo/client": "^3.7.9",
+    "@apollo/client": "^3.7.14",
     "@formspree/react": "^2.4.1",
     "eslint": "8.34.0",
     "eslint-config-next": "13.2.1",
