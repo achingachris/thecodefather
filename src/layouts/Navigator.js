@@ -38,6 +38,11 @@ const Navigator = () => {
               </Link>
             </li>
             <li className='nav-item'>
+              <Link href='/articles' legacyBehavior>
+                <a className='nav-link'>Articles</a>
+              </Link>
+            </li>
+            <li className='nav-item'>
               <Link href='/contact' legacyBehavior>
                 <a className='nav-link'>Contact</a>
               </Link>
