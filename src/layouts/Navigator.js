@@ -38,8 +38,8 @@ const Navigator = () => {
               </Link>
             </li>
             <li className='nav-item'>
-              <Link href='/articles' legacyBehavior>
-                <a className='nav-link'>Articles</a>
+              <Link href='/myarticles' legacyBehavior>
+                <a className='nav-link'>My Articles</a>
               </Link>
             </li>
             <li className='nav-item'>
