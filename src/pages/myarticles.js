@@ -1,12 +1,60 @@
 import fs from 'fs'
 import path from 'path'
+import Link from 'next/link'
+import Image from 'next/image'
 import matter from 'gray-matter'
 
 const index = ({ articles }) => {
   console.log(articles)
   return (
     <div>
-      My Articles
+      <section className='py-5'>
+        <div className='container px-5 mb-5'>
+          <div className='text-center mb-5'>
+            <h1 className='display-5 fw-bolder mb-0'>
+              <span className='text-gradient d-inline'>My Articles</span>
+            </h1>
+          </div>
+        </div>
+
+        {/* display articles */}
+        {articles.map((article, index) => (
+        <div className="container mt-5">
+          <div className='mt-5'>
+            <div className='row'>
+              <div className='col-md-7'>
+                <a href='#'>
+                  <Image
+                    className='img-fluid rounded mb-3 mb-md-0'
+                    src={article.frontmatter.cover_image}
+                    width={700}
+                    height={300}
+                    alt={article.frontmatter.title}
+                  />
+                </a>
+              </div>
+              <div className='col-md-5'>
+                <h3>{article.frontmatter.title}</h3>
+                <p>
+                {article.frontmatter.date}
+                </p>
+                <a
+                  className='btn btn-primary'
+                  href='#'
+                  target={'_blank'}
+                >
+                  Read Article
+                </a>
+              </div>
+            </div>
+            {/* /.row */}
+            <hr />
+          </div>
+        </div>
+        
+          // <h3>{article.frontmatter.title}</h3>
+        ))}
+      </section>
     </div>
   )
 }

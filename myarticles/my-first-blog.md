@@ -5,8 +5,8 @@ author: John Doe
 category: [Personal Development]
 tags: [blogging, markdown, frontmatter]
 excerpt: Welcome to my blog! This is my very first blog post, and I'm excited to share my thoughts with you.
-cover_image: /images/first_blog_post_cover.jpg
-author_image: /images/john_doe.jpg
+cover_image: /images/image.jpg
+author_image: /redditavatar.png
 ---
 
 # My First Blog Post

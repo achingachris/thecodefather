@@ -5,8 +5,8 @@ author: Jane Smith
 category: [Productivity, Self-Improvement]
 tags: [productivity, time management, organization]
 excerpt: Are you struggling to manage your time effectively? Don't worry; you're not alone. Many people find it challenging to balance their work, personal life, and various responsibilities. But with some simple strategies, you can improve your time management skills and become more productive.
-cover_image: /images/time_management_tips_cover.jpg
-author_image: /images/jane_smith.jpg
+cover_image: /images/image.jpg
+author_image: /redditavatar.png
 ---
 
 # 10 Tips for Effective Time Management
