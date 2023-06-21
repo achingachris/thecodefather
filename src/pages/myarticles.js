@@ -4,9 +4,10 @@ import Link from 'next/link'
 import Image from 'next/image'
 import matter from 'gray-matter'
 import { sortByDate } from '@/utils'
+import ArticleCard from '@/components/myarticles/ArticleCard'
 
 const index = ({ articles }) => {
-  console.log(articles)
+  // console.log(articles)
   return (
     <div>
       <section className='py-5'>
@@ -17,6 +18,16 @@ const index = ({ articles }) => {
             </h1>
           </div>
         </div>
+
+        {/* Display Articles */}
+          {/* <div className="container">
+            <div className="row">
+              {articles.map((article, index) => (
+                <ArticleCard />
+              ))}
+            </div>
+          </div> */}
+
 
         {/* display articles */}
         {articles.map((article, index) => (
@@ -66,7 +77,7 @@ export default index
 export async function getStaticProps() {
   const postsDirectory = path.join(process.cwd(), 'myarticles');
   const files = fs.readdirSync(postsDirectory);
-  console.log(files);
+  // console.log(files);
 
   const articles = files.map((filename) => {
     const slug = filename.replace('.md', '');
