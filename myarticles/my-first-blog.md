@@ -1,6 +1,6 @@
 ---
 title: My First Blog Post
-date: 2023-06-17
+date: June 17, 2023
 author: John Doe
 category: [Personal Development]
 tags: [blogging, markdown, frontmatter]

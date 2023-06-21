@@ -1,6 +1,6 @@
 ---
 title: 10 Tips for Effective Time Management
-date: 2023-06-17
+date: June 6, 2023
 author: Jane Smith
 category: [Productivity, Self-Improvement]
 tags: [productivity, time management, organization]
