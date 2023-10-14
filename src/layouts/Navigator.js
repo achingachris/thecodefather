@@ -33,6 +33,11 @@ const Navigator = () => {
               </Link>
             </li>
             <li className='nav-item'>
+              <Link href='/sessions' legacyBehavior>
+                <a className='nav-link'>Session</a>
+              </Link>
+            </li>
+            <li className='nav-item'>
               <Link href='/projects' legacyBehavior>
                 <a className='nav-link'>Projects</a>
               </Link>
