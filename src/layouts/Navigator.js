@@ -34,7 +34,7 @@ const Navigator = () => {
             </li>
             <li className='nav-item'>
               <Link href='/sessions' legacyBehavior>
-                <a className='nav-link'>Session</a>
+                <a className='nav-link'>Sessions</a>
               </Link>
             </li>
             <li className='nav-item'>

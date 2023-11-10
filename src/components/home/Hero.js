@@ -15,22 +15,22 @@ const Hero = () => {
                 </div>
               </div>
               <div className='fs-3 fw-light text-muted'>
-                I will make you and your business to
+                I write code to make the world go round
               </div>
               <h1 className='display-3 fw-bolder mb-5'>
                 <span className='text-gradient d-inline'>
-                  Get online and Be famous
+                  Software Development
                 </span>
               </h1>
               <div className='d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3'>
                 <Link href='/resume' legacyBehavior>
-                  <a className='btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder'>
+                  <a className='btn btn-success btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder'>
                     Resume
                   </a>
                 </Link>
-                <Link href='/projects' legacyBehavior>
+                <Link href='/sessions' legacyBehavior>
                   <a className='btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder'>
-                    Projects
+                    Sessions
                   </a>
                 </Link>
               </div>
