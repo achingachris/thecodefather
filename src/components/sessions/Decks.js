@@ -30,7 +30,7 @@ const Experience = () => {
       date: "November 10, 2023",
       venue: "DjangoCOn Africa: Zanzibar",
       type: "Physical",
-      resources_link: "https://www.dropbox.com/scl/fi/siaaoick01cbzhksyvlo7/DjangoCon-Africa-Workshop-Authentication-APIs.pdf?rlkey=v0nqf4bvh9u6rd1jkhcs59n94&dl=0",
+      resources_link: "https://www.dropbox.com/scl/fi/zevpth2mstk7rp7auezlu/DjangoCon-Africa-Workshop-Authentication-APIs.pdf?rlkey=af970nxwbm5i0xakosejkxu4m&dl=0",
       topic: "Building Authentication APIs with Django"
     },
     {
